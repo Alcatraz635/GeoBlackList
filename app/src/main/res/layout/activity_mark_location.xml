@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.tylerschumacher.geoblacklist.MarkLocationActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mark_location_button"
+            android:id="@+id/mark_button"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/number_instructions"
+            android:id="@+id/instructionText"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/number_format"
+            android:id="@+id/formatText"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:phoneNumber="true"
+            android:textColor="#ff00ff3d"/>
+
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:inputType="phone" android:ems="10" android:id="@+id/editText2"
+                  android:phoneNumber="true" android:textColor="#ff00ff3d"/>
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:inputType="phone" android:ems="10" android:id="@+id/editText3"
+                  android:phoneNumber="true" android:textColor="#ff00ff3d"/>
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:inputType="phone" android:ems="10" android:id="@+id/editText4"
+                  android:phoneNumber="true" android:textColor="#ff00ff3d"/>
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:inputType="phone" android:ems="10" android:id="@+id/editText5"
+                  android:phoneNumber="true" android:textColor="#ff00ff3d"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/block_number_button"
+            android:id="@+id/blockButton" android:nestedScrollingEnabled="true"/>
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationListView" android:choiceMode="singleChoice"
+            android:clickable="true"/>
+
+    </LinearLayout>
+</RelativeLayout>
